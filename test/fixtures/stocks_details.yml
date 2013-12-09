@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  primary_ID: 
+  data: 2013-12-06
+  open: 
+  high: 
+  low: 
+  close: 
+  volume: 
+  adj_close: 
+
+two:
+  primary_ID: 
+  data: 2013-12-06
+  open: 
+  high: 
+  low: 
+  close: 
+  volume: 
+  adj_close: 

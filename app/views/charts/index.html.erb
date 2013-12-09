@@ -1,0 +1,15 @@
+<html>
+	<!-- Title -->
+	<div style="font-size:18pt; font-family:verdana; font-weight:bold">
+		<% provide(:title, 'Contact') %>
+	</div>
+	<body style="margin:5px 0px 0px 5px">
+		<hr style="border:solid 1px #000080" />
+		
+		<!-- Create one or more IMG tags to display the demo chart(s) -->
+		<% 0.upto(@noOfCharts - 1) do |i| %>
+		    <img src="<%= url_for(:action => "getchart", :img => i) %>">
+		<% end %>
+		
+	</body>
+</html>
