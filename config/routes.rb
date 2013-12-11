@@ -6,6 +6,8 @@ AutomatedSystem::Application.routes.draw do
   resources :charts
   
   root 'charts#index'
+  
+  match '/getchart',  to: 'charts#getchart',            via: ['get', 'post']
 
   
   # Example of regular route:
@@ -56,4 +58,9 @@ AutomatedSystem::Application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
+  
+  # This is a legacy wild controller route that's not recommended for RESTful applications.
+  # Note: This route will make all actions in every controller accessible via GET requests.
+  
+  
 end
